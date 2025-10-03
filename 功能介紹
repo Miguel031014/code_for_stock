@@ -1,1 +1,3 @@
 # code_for_stock
+# 資料來源yahoo finance
+# 可以自行選擇yahoo finance上的股票代碼、起始日和結束日，抓出各自的挑整後收盤價
