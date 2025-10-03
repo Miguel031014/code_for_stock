@@ -1,16 +1,10 @@
 import yfinance as yf # 匯入yahoo finance套件，用來下載股價
 import pandas as pd # 資料處理套件
 import numpy as np # 運算的基礎套件
-import matplotlib.pyplot as plt # 繪圖工具
-import seaborn as sns # 高階繪圖套件
-
-# Set the aesthetic style of the plots
-sns.set_style("whitegrid")
-plt.rcParams['axes.unicode_minus'] = False
 
 ticker = input("請輸入股票代碼（以逗號分隔）: ").split(",") # 股票代碼
-start_date = '2020-01-01' # 開始日期
-end_date = '2025-09-20' # 結束日期
+start_date=input('請輸入開始日期(格式:YYYY-MM-DD)')
+end_date=input('請輸入結束日期(格式:YYYY-MM-DD)')
 
 def fetch_stock_data(ticker, start_date, end_date):
     data = yf.download(ticker, start=start_date, end=end_date, auto_adjust=False) # 下載資料
