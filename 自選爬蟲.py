@@ -1,6 +1,5 @@
 import yfinance as yf # 匯入yahoo finance套件，用來下載股價
 import pandas as pd # 資料處理套件
-import numpy as np # 運算的基礎套件
 
 ticker = input("請輸入股票代碼（以逗號分隔）: ").split(",") # 股票代碼
 start_date=input('請輸入開始日期(格式:YYYY-MM-DD)')
